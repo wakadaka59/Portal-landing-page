@@ -1,23 +1,12 @@
 body {
     margin: 0 auto;    
     width: 1440px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0em;
     border: 2px dotted red;
 }
-
-/* классы для добавления стилей на протяжении всего документа */
-
-.b {
-    border: 2px dotted blue;
-}
-.remove-undreline {
+a {
     text-decoration: none;
-}
-.dark-blue-text {
-    color: #1B365D;
-}
-.bold {
-    font-weight: bold;
 }
 
 /* ШАПКА САЙТА */
@@ -50,8 +39,7 @@ header {
 
 .header-navigation a {
     padding: 10px;
-    margin: 12px;
-    border: 1px dotted blue;    
+    margin: 12px;      
 }
 
 .header-login {
@@ -223,12 +211,16 @@ header {
 }
 .device-description li:nth-child(4) {
     margin-bottom: 32px;
+}
+.device-description li a {      
     color: white;    
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
 }
+
 /* раздел про умную камеру Smart Camera */
+
 .smart-camera {
     background-size: 1000px;
     background-image: linear-gradient(white 51%, #D0E8EA 51%);
@@ -278,7 +270,378 @@ header {
 .smart-camera-text-card p:last-child {
     margin-top: 15px;
     margin-bottom: 50px;
+}
+.smart-camera-text-card a {    
     color: #1B365D;    
     font-size: 14px;
     line-height: 20px;
+}
+
+/* раздел про открытый мессенджер, Мессенджер и Вацап */
+.messengers-section {
+    display: flex;
+}
+.messenger-opened {
+    margin: 0 57px 114.55px 88px;
+}
+.messengers-wrapper {
+    width: 505px;
+    height: 632px;
+}
+.messengers-icon-wrapper {
+    display: flex;
+}
+.Messenger-icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+    background-color: #1990FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Messenger-icon img {
+    width: 24px;
+    height: 24px;
+}
+.WhatsApp-icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 16px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.WhatsApp-icon img {
+    width: 24px;
+    height: 24px;
+}
+.messengers-wrapper h2 {
+    margin: 0;
+    margin-top: 15px;
+    width: 470px;    
+    color: #1B365D;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 55px;
+}
+.messengers-wrapper p:first-of-type {
+    margin-top: 20px;
+    display: inline-block;
+    width: 485px; 
+    color: #434141;    
+    font-size: 17px;
+    line-height: 23px;    
+}
+.messengers-wrapper p:last-of-type {    
+    display: inline-block;
+    width: 505px; 
+    color: #AEABA8;    
+    font-size: 11px;
+    line-height: 18px;
+}
+.messengers-wrapper p:last-of-type a {    
+    text-decoration: underline;
+    width: 505px; 
+    color: #AEABA8;    
+    font-size: 11px;
+    line-height: 18px;
+}
+/* секция Story  */
+.story-section {
+    background-image: url("/files/7.Story time/story_time_background.jpg");
+    height: 720px;
+    display: flex;
+}
+.story-wrapper {
+    margin: 325px 0 56.1px 59px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.story-blue-line {
+    width: 4px;
+    height: 216px;
+    background-image: linear-gradient(#ADD4E0 204px, #615E5C 204px);
+    border-radius: 0 0 4px 4px;
+}
+
+.story-main-text-wrapper {
+    margin-left: 24px;
+}
+.story-main-text-wrapper h2 {
+    margin: 0;    
+    width: 450px;    
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+}
+.story-main-text-wrapper p {
+    margin-bottom: 23px;
+    width: 430px;
+    color: white;    
+    font-size: 17px;
+    line-height: 23px;
+}
+.story-main-text-wrapper a {    
+    color: white;    
+    font-size: 14px;
+    line-height: 20px;
+}
+.story-quotes-wrapper {
+    margin-top: 56.1px;
+}
+.story-quote {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.story-short-gray-line {
+    width: 4px;
+    height: 22px;
+    background-color: #615E5C;
+    border-radius: 4px;
+}
+
+.story-quote-text {
+    margin-left: 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+}
+/* раздел про Алексу */
+.alexa-section {
+    display: flex;
+}
+.alexa-section img {
+    
+}
+.alexa-info-wrapper {
+    margin: 89.52px 7px 46px 88px;
+    width: 416px;
+}
+.alexa-info-wrapper h2 {
+    margin: 0;
+    margin-top: 13px;
+    width: 416px;    
+    color: #1B365D;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+}
+.alexa-info-wrapper p {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 46px;
+    font-size: 17px;
+    line-height: 23px;
+    color: #615E5C;
+}
+.alexa-learn-more {
+    width: 127px;
+    height: 46px;
+    background-color: #ADD4E0;    
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alexa-learn-more a {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #1B365D;
+    padding: 11px 26px 11px 26px;
+}
+.alexa-figure {
+    margin-top: 89.52px;
+    margin-bottom: 52px;
+}
+.alexa-figcaption {
+    font-family: Roboto;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #AEABA8;
+}
+/* раздел про аппаратные встроенные преимущества - hardware advantages. пожалуй не стоило делать такой длинный префикс */
+.hardware-advantages-section {
+    height: 622px;
+    background-image: linear-gradient(white 50%, #D0E7EA 50%);    
+}
+.hardware-advantages-wrapper {
+    margin: 0 88px;
+    display: flex;
+    justify-content: space-between;
+}
+.hardware-advantages-card1 {
+    width: 622px;
+    height: 622px;
+    background-image: url("/files/9.Hardware-Advantages/private-by-design.jpg");
+}
+.hardware-advantages-card2 {
+    width: 622px;
+    height: 622px;
+    background-image: url("/files/9.Hardware-Advantages/work-smarter-from-home.jpg");
+}
+.hardware-advantages-card1-text {
+    width: 480px;
+    margin: 32px 0 0 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hardware-advantages-card1-text h3 {
+    margin: 0;    
+    font-size: 30px;    
+    font-weight: 700;
+    line-height: 34px;    
+    color: #1B365D;
+}
+.hardware-advantages-card1-text p {      
+    font-size: 16px;    
+    font-weight: 400;
+    line-height: 22px;
+    color: #434140;
+}
+.hardware-advantages-card1-text a {
+    margin-top: 37px;
+    font-size: 14px;    
+    font-weight: 700;
+    line-height: 20px;
+    color: #1B365D;
+}
+
+.hardware-advantages-card2-text {
+    width: 440px;
+    margin: 32px 0 0 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hardware-advantages-card2-text h3 {
+    margin: 0;    
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 700;
+    color: white;
+}
+.hardware-advantages-card2-text p {      
+    font-size: 16px;    
+    font-weight: 400;
+    line-height: 22px;
+    color: white;
+}
+.hardware-advantages-card2-text a {
+    margin-top: 15px;
+    font-size: 14px;    
+    font-weight: 700;
+    line-height: 20px;
+    color: white;
+}
+
+/* ---------------------------------------------------------------- */
+/* ------------------------РАЗДЕЛ С ЦЕНАМИ------------------------- */
+/* ---------------------------------------------------------------- */
+
+.prices-section {
+    height: 927px;
+    background-color: #D0E7EA;
+}
+.prices-wrapper {
+    margin: 0 88px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prices-wrapper h2 {    
+    margin: 0;
+    margin-top: 57px;
+    width: 480px;    
+    color: #1B365D;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+/* спецпредложение */
+.special-offer {    
+    width: 430px;
+    height: 86px;  
+    margin-top: 27px;  
+    background-color: #D0E7EA;
+    display: flex;
+    align-items: center;
+}
+.special-offer img {
+    width: 86px;
+    height: 54px;    
+}
+.special-offer-text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+}
+.special-offer-text-wrapper span:nth-child(1) {
+    color: #1B365D;    
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+}
+.special-offer-text-wrapper span:nth-child(2) {
+    color: #1B365D;    
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* карточки товара */
+.prices-cards {
+    margin: 51px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.prices-card {
+    width: 304px;
+    height: 513px;
+    background-color: #F7F7F7;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+.pr-card-text {
+    margin: 32px 18px 24px 18px;
+    width: 268px;    
+}
+.pr-card-text div:nth-child(1) {    
+    float: left;    
+    font-size: 20px;
+    line-height: 26px;
+    color: #1B365D;
+}
+.pr-card-text div:nth-child(2) sup {
+    font-size: 10px;
+    line-height: 14px;
+    color: #1B365D;
+}
+.pr-card-text div:nth-child(2) {    
+    float: right;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1B365D;
+}
+.clearfix {
+    clear: both;
+}
+.pr-figure {
+    margin-top: 0;
 }
